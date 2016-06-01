@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.bootstrap-select {
+    width: 100px !important;
+}
+
+tr td:last-child {
+    width: 1%;
+}
+.valign-mid {
+    vertical-align: middle !important;
+}

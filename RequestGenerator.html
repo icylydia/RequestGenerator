@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Enjoy the Convience!</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- bootstrap-select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+    <link rel="stylesheet" href="css/rg.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Request Generator</h1>
+        </div>
+        <div class=" panel panel-primary">
+            <div class="panel-heading">Request</div>
+            <div class="panel-body">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <select id="rg-type-select" class="selectpicker">
+                            <option>POST</option>
+                            <option>GET</option>
+                        </select>
+                    </div>
+                    <input id="rg-url" type="text" class="form-control" aria-label="...">
+                    <span class="input-group-btn">
+                        <button id="rg-send-btn" class="btn btn-default" type="button">Send</button>
+                    </span>
+                </div>
+                <br>
+                <label>Parameters</label>
+                <table id="rg-data-tbl" class="table table-bordered">
+                    <thead>
+                        <th>Name</th>
+                        <th>Value</th>
+                        <th> </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input id="p-name" class="form-control" type="text" name="p-name" placeholder="Name">
+                            </td>
+                            <td>
+                                <input id="p-value" class="form-control" type="text" name="p-value" placeholder="value">
+                            </td>
+                            <td>
+                                <button id="rg-append-btn" type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/rg.js"></script>
+</body>
+</html>
